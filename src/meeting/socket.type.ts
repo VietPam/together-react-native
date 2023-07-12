@@ -10,6 +10,12 @@ export interface ServerToClientEvents {
     newMessageToGroup: (mess: OnNewMessageType) => void;
 }
 
+export interface ClientToServerEvents {
+    hello: any;
+    joinRoom: (payload: EmitJoinRoomDTO) => void;
+    message: (message: EmitNewMessageType) => void;
+}
+
 export interface EmitJoinRoomDTO {
     user: {
         username: string;

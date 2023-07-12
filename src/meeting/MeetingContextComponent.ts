@@ -8,6 +8,15 @@ import {
 } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { SOCKET_ENDPOINT } from '../api/endpoint';
+import {
+    ClientToServerEvents,
+    OnNewMessageType,
+    ServerToClientEvents,
+} from '../meeting/socket.type';
+import { initialContextState, MeetingReducer } from './MeetingContext';
+import { Member } from '../models/Member';
+import { Room } from '../models/Room';
+import { MeetingContextProvider } from './MeetingContext';
 
 export interface IMeetingContextProviderProps extends PropsWithChildren { }
 
