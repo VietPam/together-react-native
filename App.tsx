@@ -1,11 +1,12 @@
-import { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 import {
   StyleSheet,
   Text, useColorScheme,
   View
 } from 'react-native';
 import { Provider } from 'react-redux';
-import store from 'store/index';
+import store from './src/store/index';
+import MeetingContextComponent from './src/meeting/MeetingContextComponent';
 
 
 function App(): JSX.Element {

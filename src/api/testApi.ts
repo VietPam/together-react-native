@@ -1,5 +1,4 @@
-import axiosClient from "../";
-import { APIPaths } from "./path";
+import axiosClient from "../api/axiosClient";
 
 export const testApi = {
     getTestString: () => {
